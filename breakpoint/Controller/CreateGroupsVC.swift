@@ -67,7 +67,12 @@ extension CreateGroupsVC: UITableViewDelegate, UITableViewDataSource {
         let profileImage = #imageLiteral(resourceName: "defaultProfileImage")
         let email = emailArray[indexPath.row]
         
-        cell.configureCell(profileImage: profileImage, email: email, isSelected: false)
+        if chosenemailArray.contains(emailArray[indexPath.row]){
+            cell.configureCell(profileImage: profileImage, email: email, isSelected: true)
+        } else {
+            cell.configureCell(profileImage: profileImage, email: email, isSelected: false)
+        }
+        
         return cell
     }
     
