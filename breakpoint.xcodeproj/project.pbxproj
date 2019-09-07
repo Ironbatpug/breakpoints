@@ -12,6 +12,7 @@
 		75A047852323C5AB000999FC /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A047842323C5AB000999FC /* LoginVC.swift */; };
 		75A047872323C617000999FC /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A047862323C617000999FC /* InsetTextField.swift */; };
 		75A047892323C97C000999FC /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A047882323C97C000999FC /* ShadowView.swift */; };
+		75A0478B2323D00F000999FC /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A0478A2323D00F000999FC /* AuthServices.swift */; };
 		75F8719C2323A4A100000719 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8719B2323A4A100000719 /* AppDelegate.swift */; };
 		75F8719E2323A4A100000719 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8719D2323A4A100000719 /* FirstViewController.swift */; };
 		75F871A02323A4A100000719 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8719F2323A4A100000719 /* SecondViewController.swift */; };
@@ -29,6 +30,7 @@
 		75A047842323C5AB000999FC /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		75A047862323C617000999FC /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		75A047882323C97C000999FC /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		75A0478A2323D00F000999FC /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		75F871982323A4A100000719 /* breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F8719B2323A4A100000719 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75F8719D2323A4A100000719 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				75A047802323AA5F000999FC /* DataService.swift */,
+				75A0478A2323D00F000999FC /* AuthServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				75F8719C2323A4A100000719 /* AppDelegate.swift in Sources */,
 				75A047892323C97C000999FC /* ShadowView.swift in Sources */,
 				75F8719E2323A4A100000719 /* FirstViewController.swift in Sources */,
+				75A0478B2323D00F000999FC /* AuthServices.swift in Sources */,
 				75A047872323C617000999FC /* InsetTextField.swift in Sources */,
 				75A047812323AA5F000999FC /* DataService.swift in Sources */,
 			);
