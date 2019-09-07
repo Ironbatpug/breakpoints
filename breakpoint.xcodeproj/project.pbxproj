@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75763FB023241AC900A0A16E /* CreateGroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75763FAF23241AC900A0A16E /* CreateGroupsVC.swift */; };
 		75A047812323AA5F000999FC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A047802323AA5F000999FC /* DataService.swift */; };
 		75A047832323C56B000999FC /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A047822323C56B000999FC /* AuthVC.swift */; };
 		75A047852323C5AB000999FC /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A047842323C5AB000999FC /* LoginVC.swift */; };
@@ -18,6 +19,7 @@
 		75A047932323FE18000999FC /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A047922323FE18000999FC /* CreatePostVC.swift */; };
 		75A04795232402E8000999FC /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A04794232402E8000999FC /* FeedCell.swift */; };
 		75A04797232407FB000999FC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A04796232407FB000999FC /* Message.swift */; };
+		75F4B53223241F0A00F1AE74 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F4B53123241F0A00F1AE74 /* UserCell.swift */; };
 		75F8719C2323A4A100000719 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8719B2323A4A100000719 /* AppDelegate.swift */; };
 		75F8719E2323A4A100000719 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8719D2323A4A100000719 /* FeedVC.swift */; };
 		75F871A02323A4A100000719 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8719F2323A4A100000719 /* GroupsVC.swift */; };
@@ -30,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		619A37BDCF831185EFA12AE4 /* Pods_breakpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breakpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75763FAF23241AC900A0A16E /* CreateGroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupsVC.swift; sourceTree = "<group>"; };
 		75A047802323AA5F000999FC /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		75A047822323C56B000999FC /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		75A047842323C5AB000999FC /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -41,6 +44,7 @@
 		75A047922323FE18000999FC /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		75A04794232402E8000999FC /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		75A04796232407FB000999FC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		75F4B53123241F0A00F1AE74 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		75F871982323A4A100000719 /* breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F8719B2323A4A100000719 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75F8719D2323A4A100000719 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 				75A047842323C5AB000999FC /* LoginVC.swift */,
 				75A0478C2323E779000999FC /* MeVC.swift */,
 				75A047922323FE18000999FC /* CreatePostVC.swift */,
+				75763FAF23241AC900A0A16E /* CreateGroupsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 				75A047862323C617000999FC /* InsetTextField.swift */,
 				75A047882323C97C000999FC /* ShadowView.swift */,
 				75A04794232402E8000999FC /* FeedCell.swift */,
+				75F4B53123241F0A00F1AE74 /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -293,6 +299,8 @@
 				75A047832323C56B000999FC /* AuthVC.swift in Sources */,
 				75F871A02323A4A100000719 /* GroupsVC.swift in Sources */,
 				75A047852323C5AB000999FC /* LoginVC.swift in Sources */,
+				75763FB023241AC900A0A16E /* CreateGroupsVC.swift in Sources */,
+				75F4B53223241F0A00F1AE74 /* UserCell.swift in Sources */,
 				75F8719C2323A4A100000719 /* AppDelegate.swift in Sources */,
 				75A047892323C97C000999FC /* ShadowView.swift in Sources */,
 				75F8719E2323A4A100000719 /* FeedVC.swift in Sources */,
