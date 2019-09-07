@@ -10,26 +10,47 @@ import UIKit
 
 class LoginVC: UIViewController {
 
+    @IBOutlet weak var emailField: InsetTextField!
+    @IBOutlet weak var passwordField: InsetTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        emailField.delegate = self
+        passwordField.delegate = self
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func signinBtnWasPressed(_ sender: Any) {
+        if emailField.text != nil && passwordField.text != nil {
+            AuthService.instance.loginUser(withEmail: emailField.text!, adnPassword: passwordField.text!) { (succes, error) in
+                if succes {
+                    self.dismiss(animated: true, completion: nil)
+                } else {
+                    print(String(describing: error?.localizedDescription))
+                }
+                
+                AuthService.instance.registerUser(withEmail: self.emailField.text!, adnPassword: self.passwordField.text!, userCreationComplete: { (succes, error) in
+                    if succes {
+                        AuthService.instance.loginUser(withEmail: self.emailField.text!, adnPassword: self.passwordField.text!, loginComplete: { (succes, nil) in
+                            self.dismiss(animated: true, completion: nil)
+                            print("succes regist")
+                        })
+                    } else {
+                        print(String(describing: error?.localizedDescription))
+                    }
+                })
+            }
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func closeBtnWasPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
-    */
-
 }
+
+extension LoginVC: UITextFieldDelegate {
+    
+}
+
+
+
+

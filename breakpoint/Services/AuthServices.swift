@@ -20,7 +20,6 @@ class AuthService {
             }
             
             let userData = ["provider": user.user.providerID, "email": user.user.email]
-            
             DataService.instance.createDBUser(uid: user.user.uid, userData: userData)
             userCreationComplete(true, nil)
         }
@@ -28,7 +27,7 @@ class AuthService {
     
     func loginUser(withEmail email: String, adnPassword password: String, loginComplete: @escaping (_ status: Bool, _ error: Error?) -> ()) {
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
-            guard let user = user else {
+            if error != nil {
                 loginComplete(false, error)
                 return
             }
