@@ -14,6 +14,8 @@
 		75A047892323C97C000999FC /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A047882323C97C000999FC /* ShadowView.swift */; };
 		75A0478B2323D00F000999FC /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A0478A2323D00F000999FC /* AuthServices.swift */; };
 		75A0478D2323E779000999FC /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A0478C2323E779000999FC /* MeVC.swift */; };
+		75A047912323F960000999FC /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A047902323F960000999FC /* UIViewExt.swift */; };
+		75A047932323FE18000999FC /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A047922323FE18000999FC /* CreatePostVC.swift */; };
 		75F8719C2323A4A100000719 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8719B2323A4A100000719 /* AppDelegate.swift */; };
 		75F8719E2323A4A100000719 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8719D2323A4A100000719 /* FeedVC.swift */; };
 		75F871A02323A4A100000719 /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8719F2323A4A100000719 /* GroupsVC.swift */; };
@@ -33,6 +35,8 @@
 		75A047882323C97C000999FC /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		75A0478A2323D00F000999FC /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		75A0478C2323E779000999FC /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
+		75A047902323F960000999FC /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		75A047922323FE18000999FC /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		75F871982323A4A100000719 /* breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F8719B2323A4A100000719 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75F8719D2323A4A100000719 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 				75A047822323C56B000999FC /* AuthVC.swift */,
 				75A047842323C5AB000999FC /* LoginVC.swift */,
 				75A0478C2323E779000999FC /* MeVC.swift */,
+				75A047922323FE18000999FC /* CreatePostVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 		75F871B32323A59600000719 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				75A047902323F960000999FC /* UIViewExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -274,7 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A047912323F960000999FC /* UIViewExt.swift in Sources */,
 				75A0478D2323E779000999FC /* MeVC.swift in Sources */,
+				75A047932323FE18000999FC /* CreatePostVC.swift in Sources */,
 				75A047832323C56B000999FC /* AuthVC.swift in Sources */,
 				75F871A02323A4A100000719 /* GroupsVC.swift in Sources */,
 				75A047852323C5AB000999FC /* LoginVC.swift in Sources */,
