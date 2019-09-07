@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class CreateGroupsVC: UIViewController {
     @IBOutlet weak var titleText: InsetTextField!
@@ -46,6 +47,20 @@ class CreateGroupsVC: UIViewController {
     }
     
     @IBAction func doneBtnWasPressed(_ sender: Any) {
+        if titleText.text != "" && descriptionText.text != "" {
+            DataService.instance.getIDs(forUsername: chosenemailArray) { (idsArray) in
+                var userids = idsArray
+                userids.append((Auth.auth().currentUser?.uid)!)
+                
+                DataService.instance.createGroup(withTitle: self.titleText.text!, andDescription: self.descriptionText.text!, forUserIds: userids, handler: { (groupCreated) in
+                    if groupCreated {
+                        self.dismiss(animated: true, completion: nil)
+                    } else {
+                        print("group creating faild try it later")
+                    }
+                })
+            }
+        }
     }
     
     @IBAction func closeButtonWasPressed(_ sender: Any) {
