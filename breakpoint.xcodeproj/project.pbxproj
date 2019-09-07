@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		75A047812323AA5F000999FC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A047802323AA5F000999FC /* DataService.swift */; };
+		75A047832323C56B000999FC /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A047822323C56B000999FC /* AuthVC.swift */; };
+		75A047852323C5AB000999FC /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A047842323C5AB000999FC /* LoginVC.swift */; };
+		75A047872323C617000999FC /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A047862323C617000999FC /* InsetTextField.swift */; };
+		75A047892323C97C000999FC /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A047882323C97C000999FC /* ShadowView.swift */; };
 		75F8719C2323A4A100000719 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8719B2323A4A100000719 /* AppDelegate.swift */; };
 		75F8719E2323A4A100000719 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8719D2323A4A100000719 /* FirstViewController.swift */; };
 		75F871A02323A4A100000719 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8719F2323A4A100000719 /* SecondViewController.swift */; };
@@ -21,6 +25,10 @@
 /* Begin PBXFileReference section */
 		619A37BDCF831185EFA12AE4 /* Pods_breakpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_breakpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A047802323AA5F000999FC /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		75A047822323C56B000999FC /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		75A047842323C5AB000999FC /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		75A047862323C617000999FC /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		75A047882323C97C000999FC /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		75F871982323A4A100000719 /* breakpoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = breakpoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F8719B2323A4A100000719 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75F8719D2323A4A100000719 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +104,8 @@
 			children = (
 				75F8719D2323A4A100000719 /* FirstViewController.swift */,
 				75F8719F2323A4A100000719 /* SecondViewController.swift */,
+				75A047822323C56B000999FC /* AuthVC.swift */,
+				75A047842323C5AB000999FC /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -103,6 +113,8 @@
 		75F871B12323A58800000719 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				75A047862323C617000999FC /* InsetTextField.swift */,
+				75A047882323C97C000999FC /* ShadowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -256,9 +268,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A047832323C56B000999FC /* AuthVC.swift in Sources */,
 				75F871A02323A4A100000719 /* SecondViewController.swift in Sources */,
+				75A047852323C5AB000999FC /* LoginVC.swift in Sources */,
 				75F8719C2323A4A100000719 /* AppDelegate.swift in Sources */,
+				75A047892323C97C000999FC /* ShadowView.swift in Sources */,
 				75F8719E2323A4A100000719 /* FirstViewController.swift in Sources */,
+				75A047872323C617000999FC /* InsetTextField.swift in Sources */,
 				75A047812323AA5F000999FC /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
